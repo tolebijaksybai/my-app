@@ -1,10 +1,12 @@
-import './header.css'
+import header from './header.module.css'
+
 
 const Header = ({ title, descr }) => {
+
 	return (
-		<header className="root">
-			<div className="forest"></div>
-			<div className="container">
+		<header className={header.root}>
+			<div className={header.forest}></div>
+			<div className={header.container}>
 				<h1>{title} </h1>
 				<p>{descr}</p>
 			</div>
